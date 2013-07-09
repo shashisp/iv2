@@ -112,6 +112,8 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+AUTH_PROFILE_MODULE = 'members.Member'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,6 +124,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     'resource',
+    'members',
 
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',

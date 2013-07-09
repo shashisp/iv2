@@ -12,5 +12,6 @@ urlpatterns = patterns('',
      (r'^courses/(?P<courseslug>.*)/$', 'resource.views.SpecificCourse'),
      (r'^organisations/(?P<organisationslug>.*)/$', 'resource.views.SpecificOrganisation'),
      
-     (r'^$', direct_to_template, {'template': 'index.html'})
+     (r'^$', direct_to_template, {'template': 'index.html'}),
+     (r'^register/$', 'members.views.MemberRegistration')
 )
